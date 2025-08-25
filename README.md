@@ -37,7 +37,7 @@ The dataset (`crop.csv`) contains **1,000,000 rows and 10 features**. A **Linear
 1. **Data Preprocessing**
    - Checked dataset info, duplicates, missing values  
    - Converted categorical features using **One-Hot Encoding**  
-   - Split dataset into **80% training & 20% testing**  
+   - Split dataset into **80% training & 20% testing**
 
 2. **Model Training**
    - Model: **Linear Regression** (baseline)  
@@ -50,6 +50,13 @@ The dataset (`crop.csv`) contains **1,000,000 rows and 10 features**. A **Linear
    - Sample predictions on new data  
 
 ---
+
+## 📊 Visualizations
+
+- Correlation Heatmap  
+- Distribution Plots (Yield, Rainfall, Temperature, etc.)  
+- Feature Importance Plot  
+
 
 ## 📊 Results
 - **Model:** Linear Regression  
