@@ -18,8 +18,28 @@ The dataset (`crop.csv`) contains **1,000,000 rows and 10 features**. A **Linear
 ## 📂 Dataset Details
 - **Rows:** 1,000,000  
 - **Columns:** 10  
-- **Target Variable:** `Yield_tons_per_hectare`  
+- **Target Variable:** `Yield_tons_per_hectare`
 
+---
+
+## 📂 Dataset Availability
+
+The original dataset (`crop.csv`) was **~89 MB**, which exceeds GitHub’s 25 MB per-file limit.  
+To make it lightweight and GitHub-friendly, the dataset is stored in **Parquet format** with compression.
+
+- 📦 File provided: `crop_dataset.parquet`
+- 📉 Size reduced: ~89 MB → ~XX MB (compressed)
+
+### 🔹 How to Load the Dataset
+```python
+import pandas as pd
+
+# Load Parquet file
+df = pd.read_parquet("crop_dataset.parquet")
+
+print(df.head())
+
+```
 ### Features:
 - `Region` 🌍 (North, South, East, West)  
 - `Soil_Type` 🏞 (Sandy, Clay, Loam, Silt)  
